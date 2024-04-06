@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>01.문자열 반복 출력</title>
+</head>
+<body>
+	<!-- 문자열 str과 정수 n이 주어집니다.
+	str이 n번 반복된 문자열을 만들어 출력하는 코드를 작성해 보세요.
+	제한사항
+	1 ≤ str의 길이 ≤ 10
+	1 ≤ n ≤ 5
+	입출력 예
+	입력 #1
+	string 5
+	출력 #1
+	stringstringstringstringstring -->
+
+	<script>
+		// 01.문자열 반복 출력
+
+		// 문자열 str과 정수 n이 주어집니다.
+		// str이 n번 반복된 문자열을 만들어 출력하는 코드를 작성해 보세요.
+		// 제한사항
+		// 1 ≤ str의 길이 ≤ 10
+		// 1 ≤ n ≤ 5
+		// 입출력 예
+		// 입력 #1
+		// string 5
+		// 출력 #1
+		// stringstringstringstringstring	
+
+		// 방법01
+		let str = 'string';
+		let num = 5;
+		let result = '';
+
+		for (let i = 0; i < num; i++) {
+			result += str;
+		}
+
+		console.log(result);
+
+		// 방법 02
+		// 배운점 repeat()
+		// str.repeat(n) str을 n번 만큼 반복한다
+		let repeatTxt = (str, n) => {
+			console.log(str.repeat(n));
+		}
+
+		repeatTxt('안녕', 5);
+
+	</script>
+
+</body>
+</html>
